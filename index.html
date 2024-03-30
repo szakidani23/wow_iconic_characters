@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Introduction of iconic characters in the Warcraft Universe. In my point of view."
+    />
+    <!-- MAKE THE SONGS LOUDER -->
+    <!-- FONT DOESNT WORK ON GITHUB??! Maybe it is solved already. -->
+    <meta
+      name="keywords"
+      content="anduin,jaina,sylvanas,lichking,arthas,guldan,illidan,warcraft"
+    />
+    <title>Iconic Warcraft Characters</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/cb48e5d5ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <audio id="themeSong" autoplay loop hidden>
+        <source
+          id="themeSource"
+          src="theme_songs/anduin_song.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <!-- Logo + language switcher  -->
+      <div id="headerContainer" class="header__container">
+        <div class="header__block1">
+          <header class="header">
+            <a href="https://worldofwarcraft.com" target="_blank"
+              ><img
+                src="images/logo.webp"
+                alt="World of Warcraft Logo"
+                class="header__logo"
+            /></a>
+            <div class="header__soundButton">
+              <i id="soundButton" class="fa-solid fa-volume-high fs-3"></i>
+            </div>
+          </header>
+        </div>
+        <!--!!!!!!!!!!!!! MOBILE MENU STARTS HERE !!!!!!!!!!! default:hidden-->
+        <div id="navMobile" class="header__block2 hidden">
+          <nav class="nav__mobile navlinks" id="navLinks">
+            <i class="fa fa-times hidemenu" onclick="hideMenu()"></i>
+            <ul>
+              <a
+                id="anduinSmall"
+                href="https://szakidani23.github.io/wow_iconic_characters/"
+                ><li>Anduin</li></a
+              >
+              <a id="jainaSmall" href="#"><li>Jaina</li></a>
+              <a id="sylvanasSmall" href="#"><li>Sylvanas</li></a>
+              <a id="lichkingSmall" href="#"><li>Lich King</li></a>
+              <a id="guldanSmall" href="#"><li>Gul'Dan</li></a>
+              <a id="illidanSmall" href="#"><li>Illidan</li></a>
+            </ul>
+          </nav>
+          <i class="fa fa-bars showmenu" onclick="showMenu()"></i>
+        </div>
+        <!-- Navigation for mobile ends here -->
+      </div>
+
+      <!-- Main Content -->
+      <main class="content m-top-bot-medium">
+        <!-- Left Side  -->
+        <figure>
+          <div class="content__champion">
+            <h1 class="content__champion--name fs-2 m-bot-small fw-3">
+              Anduin Wrynn <br />
+              King of Stormwind
+            </h1>
+            <p class="content__champion--description fs-5 fw-4">
+              Son of Varian Wrynn, the previous noble and legendary king. Anduin
+              is a compassionate leader in the Warcraft universe, embodying
+              diplomacy and valor as King of Stormwind. His commitment to peace
+              is unwavering, often seeking harmony between factions. With a
+              strong sense of duty and wisdom beyond his years, he navigates
+              challenges with courage and empathy.
+            </p>
+            <a
+              class="content__champion--link"
+              href="https://wowpedia.fandom.com/wiki/Anduin_Wrynn"
+              target="_blank"
+            >
+              <button class="btn content__btn m-top-bot-medium fs-3 fw-2">
+                read more
+              </button>
+            </a>
+          </div>
+        </figure>
+
+        <!-- Right Side /// MENU ON BIGGER SCREEN default: visible -->
+        <nav class="navNormal" id="navNormal">
+          <ul class="content__menu">
+            <li class="content__menu--1 fs-2">
+              <a
+                href="https://szakidani23.github.io/wow_iconic_characters/"
+                id="anduinBig"
+                class="content__menu--champion content__menu--champion-1 menuItem"
+                href="#"
+                >Anduin</a
+              >
+            </li>
+            <li class="content__menu--2 fs-2">
+              <a
+                id="jainaBig"
+                class="content__menu--champion content__menu--champion-2 menuItem"
+                href="#"
+                >Jaina</a
+              >
+            </li>
+            <li class="content__menu--3 fs-2">
+              <a
+                id="sylvanasBig"
+                class="content__menu--champion content__menu--champion-3 menuItem"
+                href="#"
+                >Sylvanas</a
+              >
+            </li>
+            <li class="content__menu--4 fs-2">
+              <a
+                id="lichkingBig"
+                class="content__menu--champion content__menu--champion-4 menuItem"
+                href="#"
+                >Lich King</a
+              >
+            </li>
+            <li class="content__menu--5 fs-2">
+              <a
+                id="guldanBig"
+                class="content__menu--champion content__menu--champion-5 menuItem"
+                href="#"
+                >Gul'Dan</a
+              >
+            </li>
+            <li class="content__menu--6 fs-2">
+              <a
+                id="illidanBig"
+                class="content__menu--champion content__menu--champion-6 menuItem"
+                href="#"
+                >Illidan</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- BIG SCREEN MENU ENDS HERE -->
+      </main>
+      <footer class="footer">
+        <img
+          id="footerImg"
+          src="images/alliance_logo.webp"
+          alt="Alliance_logo"
+          class="footer__img"
+        />
+        <blockquote class="footer__quote fs-4">
+          "I have no light. Not after what I've seen. <br />Not after what I've
+          done."
+        </blockquote>
+      </footer>
+      <p class="copyright">
+        &copy; Made with &#10084; by
+        <a class="copyright__link" href="https://github.com/szakidani23"
+          >Daniel Szakaly</a
+        >
+      </p>
+      <div class="credit">
+        <a
+          class="credit__link"
+          target="_blank"
+          href="https://www.youtube.com/watch?v=Ios97g_NhNc"
+          >Youtube link for the song</a
+        >
+      </div>
+    </div>
+
+    <script src="menu.js"></script>
+    <script src="champions.js"></script>
+  </body>
+</html>

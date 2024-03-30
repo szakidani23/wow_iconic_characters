@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: inherit;
+}
+
+// COLOR VARIABLES //
+$color-primary: #f7fefc;
+$color-secondary: #f3f3f3cf;
+$color-tertiary: #f7fefc7c;
+$color-anduin: #e3bb37;
+$color-jaina: #afa57f;
+$color-sylvanas: #aa5907;
+$color-lk: #29d1ec;
+$color-guldan: #8ff63f;
+$color-illidan: #8ff63f;
+
+// FONT VARIABLES //
+@font-face {
+  font-family: "Morpheus";
+  src: url("../font/MORPHEUS.woff") format("woff");
+}
+
+$font-primary: "Morpheus", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-hugescreen: 180em; // 2880px  Television or something
+$bp-bigscreen: 115em; // 1840px
+$bp-largestofall: 90em; //1440px
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+
+html {
+  font-size: 62.5%; // With this method 1rem === 10px
+  overflow-x: hidden;
+  box-sizing: border-box;
+  @media screen and (max-width: $bp-medium) {
+    font-size: 52.5%;
+  }
+  @media screen and (min-width: $bp-bigscreen) {
+    font-size: 100%;
+  }
+  @media screen and (min-width: $bp-hugescreen) {
+    font-size: 150%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: $font-secondary;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/anduin2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 1s ease-in-out;
+  padding: 1.2rem 4rem;
+  @media screen and (max-width: $bp-medium) {
+    background-position: 70% 50%;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: $font-secondary;
+}
+
+h1,
+h2,
+li,
+blockquote {
+  font-family: $font-primary;
+}

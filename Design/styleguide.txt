@@ -1,0 +1,38 @@
+Styleguide:
+---------------------------------------------
+Background 70# darkening #000
+Heading font: Morfeum #F7FEFC
+Body font: Open Sans #f3f3f3cf;
+
+Title & Menu === Same font size
+
+Button:
+Border radius: 40px 0 40px 0 
+Background: bit darker than then actual page's main color and 80% opacity approximately
+Font: Open Sans , Color: #f3f3f3 
+
+TextShadow behind the description : text-shadow: 1px 2px 4px #000000cd;
+
+QUOTE:
+Morpheus #f7fefc7c;
+--------------
+ MAIN COLORS:
+--------------
+ANDUIN 
+#E3BB37
+
+Jaina
+#AFA57F
+
+Sylvanas
+#AA5907
+
+LK
+#29D1EC
+
+GULDAN + ILLIDAN
+#8FF63F
+
+
+
+

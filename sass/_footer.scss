@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: $bp-medium) {
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__img {
+    max-width: 6rem;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__quote {
+    color: $color-tertiary;
+    margin-right: 10rem;
+    text-align: center;
+    letter-spacing: 0.12rem;
+    @media screen and (max-width: $bp-medium) {
+      margin: 2rem 0;
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  color: $color-primary;
+  opacity: 0.7;
+  &__link {
+    color: turquoise;
+  }
+}
+
+.credit {
+  text-align: center;
+  color: turquoise;
+  opacity: 0.7;
+  margin-top: 0.8rem;
+  &__link {
+    color: orangered;
+  }
+}
